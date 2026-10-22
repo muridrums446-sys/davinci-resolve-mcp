@@ -1,9 +1,25 @@
-# Magic Edit Desktop V11.18 — download
+# Magic Edit Desktop — downloads
 
-Este ramo contém somente o pacote de instalação do Magic Edit. A branch principal e o código do plugin DaVinci não foram alterados.
+## V11.19
 
-Baixe `MagicEdit_V11_18.zip` pela opção Download raw file do GitHub.
+[Baixar MagicEdit_V11_19.zip](https://github.com/muridrums446-sys/davinci-resolve-mcp/raw/refs/heads/magic-edit-v11-19-download/MagicEdit_V11_19.zip)
 
-Extraia fora de `C:\MagicEdit\Desktop_V10` e execute `ATUALIZAR_V11_18.bat`. O atualizador confere a versão instalada e faz backup integral verificado antes de substituir arquivos.
+- Repeticoes identificadas ja entram riscadas, com restauracao por clique direito e Ctrl+Z.
+- Detector ampliado para frases longas, varias tomadas iguais e indicacoes de erro entre versoes.
+- Arraste diretamente de X ate Y na onda, regua ou miniaturas. Delete corta e risca o texto correspondente.
+- Projetos antigos abrem sem acrescentar cortes. Para aplicar a nova deteccao, use Ferramentas > Editar automaticamente este projeto.
 
-Consulte o relatório de validação. A instalação no Windows, os vídeos originais, o modelo Groq real e a importação no DaVinci não foram validados nesta sessão.
+Feche o programa, extraia o ZIP fora de C:\MagicEdit\Desktop_V10 e execute ATUALIZAR_V11_19.bat.
+O atualizador confere a versao e verifica um backup integral antes de substituir arquivos.
+Depois abra INICIAR_MAGIC_EDIT.bat na pasta definitiva.
+
+Validacao: 77 testes Node e 53 Python aprovados; 7 testes historicos ignorados por fixtures ausentes.
+Interface Chromium real e upgrade 0.11.18 -> 0.11.19 testados na nuvem Linux.
+Groq real, Windows e importacao real no DaVinci nao foram testados para esta versao.
+Veja RELATORIO_V11_19.md.
+
+## Versao anterior
+
+O arquivo MagicEdit_V11_18.zip e sua branch original continuam preservados.
+
+Este ramo contem somente os pacotes do Magic Edit. A branch principal e o codigo do plugin DaVinci nao foram alterados.
