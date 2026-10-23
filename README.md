@@ -1,25 +1,30 @@
-# Magic Edit Desktop — downloads
+# Magic Edit Desktop V11.20
 
-## V11.19
+[Baixar MagicEdit_V11_20.zip](https://github.com/muridrums446-sys/davinci-resolve-mcp/raw/refs/heads/magic-edit-v11-20-download/MagicEdit_V11_20.zip)
 
-[Baixar MagicEdit_V11_19.zip](https://github.com/muridrums446-sys/davinci-resolve-mcp/raw/refs/heads/magic-edit-v11-19-download/MagicEdit_V11_19.zip)
+Atualização cumulativa para a instalação existente em `C:\MagicEdit\Desktop_V10`.
 
-- Repeticoes identificadas ja entram riscadas, com restauracao por clique direito e Ctrl+Z.
-- Detector ampliado para frases longas, varias tomadas iguais e indicacoes de erro entre versoes.
-- Arraste diretamente de X ate Y na onda, regua ou miniaturas. Delete corta e risca o texto correspondente.
-- Projetos antigos abrem sem acrescentar cortes. Para aplicar a nova deteccao, use Ferramentas > Editar automaticamente este projeto.
+1. Feche o Magic Edit e a janela do servidor.
+2. Baixe e extraia o ZIP fora da pasta Desktop_V10.
+3. Abra a pasta extraída e execute `ATUALIZAR_V11_20.bat`.
+4. Aguarde o backup completo e a atualização. Depois abra `C:\MagicEdit\Desktop_V10\INICIAR_MAGIC_EDIT.bat`.
 
-Feche o programa, extraia o ZIP fora de C:\MagicEdit\Desktop_V10 e execute ATUALIZAR_V11_19.bat.
-O atualizador confere a versao e verifica um backup integral antes de substituir arquivos.
-Depois abra INICIAR_MAGIC_EDIT.bat na pasta definitiva.
+O atualizador verifica o backup antes de trocar o código. Preserve o backup.
+Projetos e mídias do usuário são mantidos. Motion, Remotion e plugin DaVinci não são alterados.
 
-Validacao: 77 testes Node e 53 Python aprovados; 7 testes historicos ignorados por fixtures ausentes.
-Interface Chromium real e upgrade 0.11.18 -> 0.11.19 testados na nuvem Linux.
-Groq real, Windows e importacao real no DaVinci nao foram testados para esta versao.
-Veja RELATORIO_V11_19.md.
+## Novidades
 
-## Versao anterior
+- Arrastar um intervalo na timeline e clicar com o botão direito corta e risca o texto.
+- Espaço corrigido após botões, rolagem da timeline, foco no vídeo e durante saltos de cortes.
+- Exportar DaVinci gera FCPXML 1.9 com clipes editáveis e referência ao bruto completo, mantendo sobras para ajustes.
+- Opção adicional para criar um master MP4 completo compatível, junto do FCPXML. O original é preservado.
+- XML antigo FCP7, exportação MP4 final, Groq e recursos da V11.19 continuam disponíveis.
 
-O arquivo MagicEdit_V11_18.zip e sua branch original continuam preservados.
+No DaVinci, importe o novo `.fcpxml` como linha de tempo. Mantenha o vídeo bruto na pasta original.
+Se ativar o master compatível, mantenha o `.media.mp4` junto do FCPXML.
 
-Este ramo contem somente os pacotes do Magic Edit. A branch principal e o codigo do plugin DaVinci nao foram alterados.
+[Relatório de validação](RELATORIO_V11_20.md) · [SHA-256](MagicEdit_V11_20_SHA256.txt)
+
+Testado na nuvem Linux com Chromium e FFmpeg reais. Não houve acesso ao Windows ou importação real no DaVinci.
+Esta branch distribui o instalador; o código e a branch principal do plugin MCP não foram alterados.
+Os pacotes V11.18/V11.19 anteriores permanecem disponíveis nesta branch.
