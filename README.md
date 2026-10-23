@@ -1,3 +1,37 @@
+# Magic Edit Desktop V11.25 — casa e diagnóstico Gemini
+
+[Baixar V11.25 para Windows (aprox.5,9MB)](https://github.com/muridrums446-sys/davinci-resolve-mcp/raw/refs/heads/magic-edit-v11-25-download/MagicEdit_V11_25.zip)
+
+No PC de casa:
+
+1. Salve o projeto e feche o Magic Edit e sua janela Python.
+2. Extraia o ZIP em Downloads, fora da instalação.
+3. Execute **ATUALIZAR_V11_25_CASA.bat**. Destino: `C:\MagicEdit\Desktop_V10`.
+4. Aguarde a confirmação do backup integral e da atualização. Se houver erro, pare e leia a mensagem.
+5. Inicie **INICIAR_MAGIC_EDIT.bat da pasta definitiva** e confira V11.25 no topo.
+
+O **INSTALAR_V11.bat** agora chama o atualizador de casa corretamente.
+O **ATUALIZAR_V11_25.bat** é somente para a instalação da fábrica em
+`C:\Magicedit\MagicEdit_Desktop_V11_Atualizacao\MagicEdit_Desktop_V11`.
+
+O resultado de **Testar chave e listar modelos** aparece imediatamente junto do botão,
+com carregamento, sucesso ou erro. Chave/API/restrições recebem orientação quando o
+Google fornece um código identificável. Nenhum faturamento/cartão é ativado. A cota
+real depende da conta e do modelo; não há chamadas reais à conta do usuário nesta validação.
+
+[Relatório completo e limites](RELATORIO_V11_25.md).
+
+Validação na nuvem:118 testesJS e102Python aprovados (7fixtures históricas indisponíveis),
+50 verificações de interface. Pacote extraído: suítes completas e16verificaçõesGemini;
+backup/pré/pós-verificação semNode em casaV11.18/casaV11.24/fábricaV11.24. Windows,
+DaVinci e a causa real da consultaGoogle do usuário continuam sem validação.
+
+SHA256: `05720485df5b77395e8adf0e9b9bd77e95c271b0ff3fa9d18354f2452c364ea7`.
+
+Versões anteriores permanecem preservadas abaixo e em seus branches.
+
+---
+
 # Magic Edit Desktop V11.24 — Gemini pelo áudio
 
 [Baixar atualização V11.24 para Windows (aprox.5,7MB)](https://github.com/muridrums446-sys/davinci-resolve-mcp/raw/refs/heads/magic-edit-v11-24-download/MagicEdit_V11_24_Fabrica.zip)
