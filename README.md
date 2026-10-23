@@ -1,45 +1,42 @@
-# Magic Edit Desktop V11.22 — seleção leve e pausas de 0,9 s
+# Magic Edit Desktop V11.23 — tomadas interrompidas e reformuladas
 
-[Baixar MagicEdit_V11_22_Fabrica.zip](https://github.com/muridrums446-sys/davinci-resolve-mcp/raw/refs/heads/magic-edit-v11-22-download/MagicEdit_V11_22_Fabrica.zip)
+[Baixar MagicEdit_V11_23_Fabrica.zip](https://github.com/muridrums446-sys/davinci-resolve-mcp/raw/refs/heads/magic-edit-v11-23-download/MagicEdit_V11_23_Fabrica.zip)
 
-1. Feche o Magic Edit e o servidor.
+1. Feche Magic Edit e servidor.
 2. Extraia o ZIP em Downloads, fora da instalação.
-3. Execute `ATUALIZAR_V11_22.bat` na pasta extraída.
-4. Depois da conclusão, inicie pelo `INICIAR_MAGIC_EDIT.bat` instalado em
+3. Execute `ATUALIZAR_V11_23.bat`. Destino da fábrica:
    `C:\Magicedit\MagicEdit_Desktop_V11_Atualizacao\MagicEdit_Desktop_V11`.
+4. Aguarde a conclusão e inicie pelo `INICIAR_MAGIC_EDIT.bat` da instalação.
 
-O atualizador identifica a instalação, faz backup completo e confere SHA-256 antes
-de trocar arquivos. Mantenha o backup ao lado da instalação. Node.js é opcional.
-Não precisa mover a instalação nem copiar arquivos manualmente.
+O atualizador faz backup integral e confere SHA-256 antes de trocar código.
+Mantenha esse backup. Node.js continua opcional; não precisa mover a instalação.
 
-## Exportar o trecho que precisa de atenção
+## Aplicar o refinamento no projeto já salvo
 
-Arraste de X até Y na timeline e clique **Exportar seleção leve**. Escolha onde
-salvar o MP4 e envie o arquivo para análise. O trecho inclui as partes riscadas
-do original, para ouvirmos erro e retomada juntos. A seleção e seus cortes ficam
-preservados; funciona sem transcrição. Saídas existentes não são sobrescritas.
+Abra o JSON e use **Ferramentas → Editar automaticamente este projeto**.
+Abrir sozinho preserva sua edição. A reedição acrescenta cortes e não retranscreve.
+Clique direito restaura; Ctrl+Z desfaz.
 
-Perfil leve: imagem até 480p, até 30 fps, H.264 CRF32/maxrate600k e áudio mono
-16 kHz/64 kbps. O tamanho depende do conteúdo e da duração. Trechos de 20 a 60
-segundos costumam ser suficientes para investigar cada problema.
-O MP4 final e a exportação DaVinci mantêm seus perfis anteriores.
+A detecção local agora cobre os exemplos fornecidos:
+- Cadeias incompletas de "Ao comprar...", preservando "então, quando você compra...".
+- Perguntas próximas retomadas com outra introdução, mantendo "Próximo passo...".
+- Tentativa interrompida "Então um exemplo de...10 reais e você...", preservando
+  a explicação posterior com 100 reais. A introdução da tentativa também sai.
 
-## Pausas
+Sujeitos, negações e informação exclusiva são protegidos. Exemplos completos com
+valores diferentes continuam mantidos. Casos incertos ficam para revisão.
+São regras locais de comparação e alinhamento; o modelo Groq/Whisper não foi trocado
+nem treinado. O padrão 0,9 s, seleção MP4 leve, MP4 final e DaVinci permanecem.
 
-Novo padrão: cortar pausas **maiores que 0,9 segundo**, com proteção de voz e palavras.
-O padrão anterior 0,7 migra para 0,9; outros valores personalizados ficam.
-Abrir projeto antigo conserva os cortes salvos. Para testar o novo ritmo desde
-o início, importe um vídeo novo. Aplicar novo ritmo acrescenta cortes elegíveis,
-sem restaurar os anteriores. Ajustes novos acompanham JSON/autosave.
+[Relatório](RELATORIO_V11_23.md) · [SHA-256](MagicEdit_V11_23_Fabrica_SHA256.txt)
 
-[Relatório de validação](RELATORIO_V11_22.md) · [SHA-256](MagicEdit_V11_22_Fabrica_SHA256.txt)
+Na nuvem Linux: 111 testes Node e 80 Python aprovados; 7 testes históricos ignorados
+por fixtures ausentes. Chromium/HTTP/FFmpeg reais: 8 verificações das retomadas,
+16 da interface anterior e 10 da seleção leve, sem erros JS. Novos casos usam
+palavras/tempos do JSON original rebaseados para mídia sintética. Backup de 114
+arquivos e atualização sem Node conferidos. Não houve acesso ao Windows ou DaVinci.
 
-Na nuvem Linux: 101 testes Node e 80 Python aprovados; 7 testes históricos ignorados
-por fixtures ausentes. Chromium/HTTP/FFmpeg reais: 10 verificações da seleção e
-16 da interface anterior, sem erros JavaScript. Atualizador sem Node e backup
-integral de 109 arquivos verificados com instalação simulada. Groq e seletores
-nativos de arquivos simulados; sem API real, acesso ao Windows ou DaVinci real.
-
-Esta versão prepara os trechos para analisar as omissões da transcrição; não altera
-o reconhecimento de fala ou detector de contexto. Projetos, vídeos e integração
-Groq são preservados. Pacotes anteriores, branch principal e plugin DaVinci intactos.
+O MP4 recebido acrescenta outra passagem ("Então como você ganha... Basicamente...");
+não foi usado como prova dos pontos de áudio das marcações. O arquivo e os modelos
+ASR de diagnóstico não são publicados. Projetos, mídias, SDK/cache Groq e Silero
+são preservados. Branch principal e plugin DaVinci permanecem intactos.
