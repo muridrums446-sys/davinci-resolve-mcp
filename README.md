@@ -1,3 +1,36 @@
+# Magic Edit Desktop V11.26 — correção da validação da chave Gemini
+
+[Baixar V11.26 para Windows (aprox.5,9MB)](https://github.com/muridrums446-sys/davinci-resolve-mcp/raw/refs/heads/magic-edit-v11-26-download/MagicEdit_V11_26.zip)
+
+A verificação local deixou de presumir formato/comprimento da chave Google.
+Agora aceita credenciais opacas com pontuação e comprimentos diferentes, normaliza
+somente marcas de cópia nas bordas e preserva proteção contra controles internos.
+O Google continua decidindo a autenticidade. Não tivemos acesso à chave real e
+não afirmamos que a conta do usuário já autenticou. Não ativa faturamento/cartão.
+
+Em casa:
+
+1. Salve o projeto e feche o aplicativo e a janela Python.
+2. Extraia o ZIP em Downloads, fora da instalação.
+3. Execute **ATUALIZAR_V11_26_CASA.bat** para `C:\MagicEdit\Desktop_V10`.
+4. Aguarde confirmação do backup integral e atualização; inicie pelo
+   **INICIAR_MAGIC_EDIT.bat da pasta definitiva** e confira V11.26.
+5. Cole sua chave existente em Ferramentas > Gemini e clique Testar chave e listar modelos.
+
+Na fábrica, use **ATUALIZAR_V11_26.bat**, destinado à pasta da fábrica. Leia as
+instruções completas no ZIP. [Relatório e limitações](RELATORIO_V11_26.md).
+
+Validação:118Node e107Python aprovados (7fixtures históricas indisponíveis),16
+verificações reais de interface com transporte Google simulado e chave fictícia
+com pontuação. Pacote extraído e atualizações casaV11.18/casaV11.25/fábricaV11.25
+com backup/hash/pré/pós-verificação semNode passaram. Sem Google real/Windows/DaVinci.
+
+SHA256: `ef2cf164bfbd211a701a43c6c48bff1f290f5ff9069ff4858962d38dc7c1c669`.
+
+Versões anteriores permanecem preservadas abaixo e em seus branches.
+
+---
+
 # Magic Edit Desktop V11.25 — casa e diagnóstico Gemini
 
 [Baixar V11.25 para Windows (aprox.5,9MB)](https://github.com/muridrums446-sys/davinci-resolve-mcp/raw/refs/heads/magic-edit-v11-25-download/MagicEdit_V11_25.zip)
