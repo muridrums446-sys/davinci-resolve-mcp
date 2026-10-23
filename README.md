@@ -1,21 +1,27 @@
-# Magic Edit Desktop V11.21
+# Magic Edit V11.21 — PC da fábrica
 
-[Baixar MagicEdit_V11_21.zip](https://github.com/muridrums446-sys/davinci-resolve-mcp/raw/refs/heads/magic-edit-v11-21-download/MagicEdit_V11_21.zip)
+[Baixar MagicEdit_V11_21_Fabrica.zip](https://github.com/muridrums446-sys/davinci-resolve-mcp/raw/refs/heads/magic-edit-v11-21-fabrica-download/MagicEdit_V11_21_Fabrica.zip)
+
+Este pacote corrige o atualizador para a instalação mostrada na captura:
+`C:\Magicedit\MagicEdit_Desktop_V11_Atualizacao\MagicEdit_Desktop_V11`.
+A versão do aplicativo continua V11.21.
 
 1. Feche o Magic Edit e o servidor.
-2. Extraia o ZIP fora de `C:\MagicEdit\Desktop_V10`.
-3. Execute `ATUALIZAR_V11_21.bat`. Ele verifica o backup integral antes de atualizar.
-4. Abra `C:\MagicEdit\Desktop_V10\INICIAR_MAGIC_EDIT.bat` e confira V11.21.
+2. Extraia o ZIP em Downloads, fora da pasta instalada.
+3. Abra a pasta extraída `Magic_Edit_Desktop_V11_21_Fabrica` e execute `ATUALIZAR_V11_21.bat`.
+4. Aguarde a conclusão e abra `INICIAR_MAGIC_EDIT.bat` na pasta instalada acima.
 
-## Ajustes
+O atualizador confere a instalação e a versão antes de trocar arquivos; faz backup
+integral e verifica SHA-256. Mantenha o backup ao lado da instalação. Não precisa
+mover a pasta instalada nem copiar arquivos manualmente.
 
-- Pausas confirmadas acima de **0,7 segundo** são cortadas automaticamente, preservando margens junto à voz. Limite ajustável em Ferramentas e salvo no projeto/autosave.
-- Direito na seleção da timeline alterna cortar/restaurar. A seleção permanece; restaurar parte de um corte mantém as outras partes removidas.
-- Repetições: **3 ou mais palavras consecutivas iguais, em tentativas próximas**, mantendo a última. Uma/duas palavras e começos comuns de frases diferentes ficam preservados para revisão.
-- Projetos antigos mantêm cortes salvos ao abrir. FCPXML 1.9, bruto completo, opção de master, MP4 final, Espaço e Groq permanecem.
+[Relatório desta revisão](RELATORIO_FABRICA.md) · [SHA-256](MagicEdit_V11_21_Fabrica_SHA256.txt)
 
-[Relatório de validação](RELATORIO_V11_21.md) · [SHA-256](MagicEdit_V11_21_SHA256.txt)
+Validação na nuvem Linux: 94 testes Node e 77 Python aprovados, 7 históricos ignorados.
+Atualização CLI simulada com backup integral conferido, preservação de arquivos e
+rollback testados. O BAT não foi executado no Windows e não houve acesso à sua máquina
+ou ao DaVinci. O código de edição da V11.21 permanece igual.
 
-Testes na nuvem Linux: 94 Node e 69 Python aprovados; 7 testes históricos ignorados por fixtures ausentes. Interface Chromium e FFmpeg reais, respostas Groq simuladas. Atualização CLI com backup integral de 104 arquivos verificado. Windows/DaVinci reais não foram acessados nesta sessão.
-
-Mantenha o backup. O original, JSON e configurações são preservados. Esta branch distribui o instalador; o código e a branch principal do plugin DaVinci MCP não foram alterados. Os pacotes anteriores continuam disponíveis.
+Os arquivos e branches anteriores continuam disponíveis. Esta branch distribui
+somente os pacotes do Magic Edit; a branch principal e o código do plugin DaVinci
+não são alterados.
