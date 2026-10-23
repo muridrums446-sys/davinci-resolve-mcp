@@ -1,30 +1,21 @@
-# Magic Edit Desktop V11.20
+# Magic Edit Desktop V11.21
 
-[Baixar MagicEdit_V11_20.zip](https://github.com/muridrums446-sys/davinci-resolve-mcp/raw/refs/heads/magic-edit-v11-20-download/MagicEdit_V11_20.zip)
+[Baixar MagicEdit_V11_21.zip](https://github.com/muridrums446-sys/davinci-resolve-mcp/raw/refs/heads/magic-edit-v11-21-download/MagicEdit_V11_21.zip)
 
-Atualização cumulativa para a instalação existente em `C:\MagicEdit\Desktop_V10`.
+1. Feche o Magic Edit e o servidor.
+2. Extraia o ZIP fora de `C:\MagicEdit\Desktop_V10`.
+3. Execute `ATUALIZAR_V11_21.bat`. Ele verifica o backup integral antes de atualizar.
+4. Abra `C:\MagicEdit\Desktop_V10\INICIAR_MAGIC_EDIT.bat` e confira V11.21.
 
-1. Feche o Magic Edit e a janela do servidor.
-2. Baixe e extraia o ZIP fora da pasta Desktop_V10.
-3. Abra a pasta extraída e execute `ATUALIZAR_V11_20.bat`.
-4. Aguarde o backup completo e a atualização. Depois abra `C:\MagicEdit\Desktop_V10\INICIAR_MAGIC_EDIT.bat`.
+## Ajustes
 
-O atualizador verifica o backup antes de trocar o código. Preserve o backup.
-Projetos e mídias do usuário são mantidos. Motion, Remotion e plugin DaVinci não são alterados.
+- Pausas confirmadas acima de **0,7 segundo** são cortadas automaticamente, preservando margens junto à voz. Limite ajustável em Ferramentas e salvo no projeto/autosave.
+- Direito na seleção da timeline alterna cortar/restaurar. A seleção permanece; restaurar parte de um corte mantém as outras partes removidas.
+- Repetições: **3 ou mais palavras consecutivas iguais, em tentativas próximas**, mantendo a última. Uma/duas palavras e começos comuns de frases diferentes ficam preservados para revisão.
+- Projetos antigos mantêm cortes salvos ao abrir. FCPXML 1.9, bruto completo, opção de master, MP4 final, Espaço e Groq permanecem.
 
-## Novidades
+[Relatório de validação](RELATORIO_V11_21.md) · [SHA-256](MagicEdit_V11_21_SHA256.txt)
 
-- Arrastar um intervalo na timeline e clicar com o botão direito corta e risca o texto.
-- Espaço corrigido após botões, rolagem da timeline, foco no vídeo e durante saltos de cortes.
-- Exportar DaVinci gera FCPXML 1.9 com clipes editáveis e referência ao bruto completo, mantendo sobras para ajustes.
-- Opção adicional para criar um master MP4 completo compatível, junto do FCPXML. O original é preservado.
-- XML antigo FCP7, exportação MP4 final, Groq e recursos da V11.19 continuam disponíveis.
+Testes na nuvem Linux: 94 Node e 69 Python aprovados; 7 testes históricos ignorados por fixtures ausentes. Interface Chromium e FFmpeg reais, respostas Groq simuladas. Atualização CLI com backup integral de 104 arquivos verificado. Windows/DaVinci reais não foram acessados nesta sessão.
 
-No DaVinci, importe o novo `.fcpxml` como linha de tempo. Mantenha o vídeo bruto na pasta original.
-Se ativar o master compatível, mantenha o `.media.mp4` junto do FCPXML.
-
-[Relatório de validação](RELATORIO_V11_20.md) · [SHA-256](MagicEdit_V11_20_SHA256.txt)
-
-Testado na nuvem Linux com Chromium e FFmpeg reais. Não houve acesso ao Windows ou importação real no DaVinci.
-Esta branch distribui o instalador; o código e a branch principal do plugin MCP não foram alterados.
-Os pacotes V11.18/V11.19 anteriores permanecem disponíveis nesta branch.
+Mantenha o backup. O original, JSON e configurações são preservados. Esta branch distribui o instalador; o código e a branch principal do plugin DaVinci MCP não foram alterados. Os pacotes anteriores continuam disponíveis.
