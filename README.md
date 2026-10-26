@@ -1,3 +1,20 @@
+## Teste local do corte de repeticao e pigarro
+
+[Baixar Teste_Pigarro_MagicEdit.zip](https://github.com/muridrums446-sys/davinci-resolve-mcp/raw/refs/heads/magic-edit-pigarro-test-download/Teste_Pigarro_MagicEdit.zip)
+
+Extraia em Downloads e execute TESTAR_PIGARRO.bat. Escolha o JSON salvo no Magic
+Edit. O utilitario cria ao lado uma copia com final _TESTE_PIGARRO.json, para abrir
+em Abrir projeto. Reabra o original para comparar. E uma edicao manual de teste
+para a marcacao especifica ja analisada, nao uma atualizacao de reconhecimento.
+
+Sem rede, chave, faturamento, instalacao, video ou transcricao no pacote. Preserva
+o JSON original e recusa sobrescrever copia anterior. Verifica a marcacao esperada
+e recusa adicionar cortes que invadam palavras da transcricao.
+CLI verificado em Linux com o projeto fornecido e cenarios de recusa; interface
+Tk/launcher Windows nao executados na nuvem. Requer Python, ja usado pelo Magic Edit.
+
+---
+
 ## Magic Edit Desktop V11.27 — diagnostico de conexao Gemini
 
 [Baixar MagicEdit_V11_27.zip](https://github.com/muridrums446-sys/davinci-resolve-mcp/raw/refs/heads/magic-edit-v11-27-download/MagicEdit_V11_27.zip)
