@@ -1,3 +1,25 @@
+## Magic Edit Resolve silêncio09 — correção de interface1.0.1
+
+[Baixar1.0.1](https://github.com/muridrums446-sys/davinci-resolve-mcp/raw/refs/heads/magic-edit-resolve-silence09-ui-fix-download/MagicEdit_Resolve_Silencios09_v1_0_1.zip)
+
+Remove o seletor de intensidade que ocupou altura indevida no Resolve e ocultou
+contadores/status. Mantém Equilibrado50 fixo, detector e pausa>0,9s. Falhas ao
+iniciar/concluir/aplicar ficam visíveis no painel, na Console e em
+`LOCALAPPDATA/MagicEdit/Silencios09/ultimo_erro.json`.
+
+A falha relatada do botão ANALISAR ainda não tem causa confirmada; o diagnóstico
+novo serve para identificá-la, não comprova que a operação esteja corrigida.
+
+Feche Resolve, extraia e execute INSTALAR.bat. Atualiza1.0.0 usando backups
+verificados; fontes alteradas pelo usuário são preservadas. Reaproveita runtime,
+não recoloca backups no menu. RESTAURAR.bat desfaz uma etapa por execução.
+24testes passam e atualização/restauração dos dois níveis do pacote extraído
+verificada com Python/ONNX/Node/FFmpeg reais e API/UI simuladas. Layout/click real
+seguem pendentes de teste no Resolve do usuário.
+[Relatório](RELATORIO_Resolve_Silencios09_v1_0_1.md).
+
+---
+
 ## Magic Edit no Resolve — pausas maiores que0,9s
 
 [Baixar pacote de teste](https://github.com/muridrums446-sys/davinci-resolve-mcp/raw/refs/heads/magic-edit-resolve-silence09-download/MagicEdit_Resolve_Silencios09.zip)
