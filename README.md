@@ -1,3 +1,28 @@
+## Magic Edit no Resolve — pausas maiores que0,9s
+
+[Baixar pacote de teste](https://github.com/muridrums446-sys/davinci-resolve-mcp/raw/refs/heads/magic-edit-resolve-silence09-download/MagicEdit_Resolve_Silencios09.zip)
+
+Integra o mesmo detector JS/Silero/energia do DesktopV11.28 ao painel Magic Edit
+fornecido para revisao. Instalador dirigido aos hashes dos scripts analisados;
+cria snapshot verificavel e inclui RESTAURAR.bat. Retira do menu somente os13
+nomes de backup do levantamento, guardando-os fora de Scripts. Os4utilitarios
+sem backup no nome permanecem. Nao altera Motion/Transcricao/MCP.
+
+Salve o projeto e feche o Resolve. Extraia em Downloads e execute INSTALAR.bat.
+Analise um bruto V1/A1 antes de efeitos. ANALISAR marca; CRIAR COPIA gera outra
+timeline, sem cortar a original. Equilibrado50 e o padrao externo. Sem JSON de
+transcricao correspondente, a protecao textual pode diferir do Desktop; a voz
+continua protegida pelo Silero. Sem chamadas de IA ou envio de audio/texto.
+
+21testes passam, worker local real e instalacao/restauracao de fixture com
+hashes conferidos. Revisao independente sem pendencias importantes/criticas.
+**Ainda nao validado ao vivo em Windows/Resolve21.1.1:** primeiro uso requer
+conferencia da janela, marcadores e resultado. Nao usar para remontar grades/FX
+ou edicoes finalizadas. Nenhum video/transcricao/script privado original no ZIP.
+[Relatorio](RELATORIO_Resolve_Silencios09.md) · [SHA256](MagicEdit_Resolve_Silencios09_SHA256.txt)
+
+---
+
 ## Magic Edit Desktop V11.28 — acabamento entre retomadas confirmadas
 
 [Baixar MagicEdit_V11_28.zip](https://github.com/muridrums446-sys/davinci-resolve-mcp/raw/refs/heads/magic-edit-v11-28-download/MagicEdit_V11_28.zip)
