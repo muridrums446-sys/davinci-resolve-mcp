@@ -1,3 +1,27 @@
+## Magic Edit Desktop V11.28 — acabamento entre retomadas confirmadas
+
+[Baixar MagicEdit_V11_28.zip](https://github.com/muridrums446-sys/davinci-resolve-mcp/raw/refs/heads/magic-edit-v11-28-download/MagicEdit_V11_28.zip)
+
+Depois da validacao de uma repeticao/reinicio claro, limpa o intervalo curto
+sem palavras transcritas antes da tomada mantida (0,35–3s). Preserva100ms antes
+da retomada; antecipa no maximo80ms, com60ms de protecao depois da palavra anterior.
+Respeita selecao/janela e tomadas mantidas. Piggarros isolados continuam revisao;
+nao e um detector geral de ruido. Projetos salvos nao sao recalculados ao abrir.
+Nova analise consentida usa cacheversao2 e pode reenviar audio/consumir cota.
+
+Salve o projeto, feche app/servidor, extraia o ZIP em Downloads e execute
+**ATUALIZAR_V11_28.bat** na fabrica ou **ATUALIZAR_V11_28_CASA.bat** em casa.
+Fabrica:`C:\Magicedit\MagicEdit_Desktop_V11_Atualizacao\MagicEdit_Desktop_V11`.
+Casa:`C:\MagicEdit\Desktop_V10`. Backup integral conferido antes da troca.
+Depois abra INICIAR_MAGIC_EDIT.bat na instalacao e Ctrl+F5; confiraV11.28.
+
+118Node passam;121Python(114passam/7skips historicos);Chromium14checks do fluxo,
+3acabamento e5modelos, Google simulado;CLI semNode com backups casa27/fabrica26/27.
+Nao executado Gemini real, Windows ou DaVinci na nuvem. Nenhum arquivo privado
+fornecido pelo usuario consta do pacote. [Relatorio](RELATORIO_V11_28.md).
+
+---
+
 ## Magic Edit Desktop V11.27 — diagnostico de conexao Gemini
 
 [Baixar MagicEdit_V11_27.zip](https://github.com/muridrums446-sys/davinci-resolve-mcp/raw/refs/heads/magic-edit-v11-27-download/MagicEdit_V11_27.zip)
