@@ -1,3 +1,26 @@
+## Magic Edit Desktop V11.27 — diagnostico de conexao Gemini
+
+[Baixar MagicEdit_V11_27.zip](https://github.com/muridrums446-sys/davinci-resolve-mcp/raw/refs/heads/magic-edit-v11-27-download/MagicEdit_V11_27.zip)
+
+Distingue timeout, DNS, certificado/TLS e conexao interrompida, com tempo decorrido
+sem expor chave ou mensagens brutas. HTTP503 permanece HTTP503. Melhora o diagnostico;
+a causa real da falha de rede do usuario ainda depende de teste no computador dele.
+Sem troca de modelo, retentativa automatica ou ativacao de faturamento.
+
+Fabrica: salve e feche app/servidor, extraia o ZIP fora da instalacao e execute
+**ATUALIZAR_V11_27.bat**. Destino:
+`C:\Magicedit\MagicEdit_Desktop_V11_Atualizacao\MagicEdit_Desktop_V11`.
+Casa: **ATUALIZAR_V11_27_CASA.bat**, destino `C:\MagicEdit\Desktop_V10`.
+Backup integral verificado antes da troca. Depois abra INICIAR_MAGIC_EDIT.bat
+na pasta instalada e Ctrl+F5. Confira V11.27.
+
+Verificacao:118Node;117Python(110passam/7skips historicos);14checks Chromium
+com Google simulado;5checks de modelos;CLI de atualizacao/backup semNode casa26 e
+fabrica24/26. Sem teste real Google,Windows ou DaVinci.
+[Relatorio](RELATORIO_V11_27.md) · [SHA256](MagicEdit_V11_27_SHA256.txt)
+
+---
+
 # Magic Edit Desktop V11.26 — correção da validação da chave Gemini
 
 [Baixar V11.26 para Windows (aprox.5,9MB)](https://github.com/muridrums446-sys/davinci-resolve-mcp/raw/refs/heads/magic-edit-v11-26-download/MagicEdit_V11_26.zip)
